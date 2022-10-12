@@ -14,7 +14,7 @@ pipeline{
         stage('Buildl'){
             steps{
                 sh 'mvn clean install package'
-                sh "mv  /webapp/target/webapp.war"
+                sh "cp  /webapp/target/webapp.war"
             }
         }
     }
