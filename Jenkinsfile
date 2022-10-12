@@ -11,7 +11,7 @@ pipeline{
             git branch: 'main', url: 'https://github.com/GARAGANAGARAJU/helloworldapp.git'
             }
         }
-        stage('Build'){
+        stage('Buildl'){
             steps{
                 sh 'mvn clean install package'
                 sh "mv  /webapp/target webapp.war"
