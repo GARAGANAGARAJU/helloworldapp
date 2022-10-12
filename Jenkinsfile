@@ -14,7 +14,7 @@ pipeline{
         stage('Build'){
             steps{
                 sh 'mvn clean install package'
-                sh "mv target/*.war target/myweb.war"
+                sh "mv  /webapp/target webapp.war"
             }
         }
     }
